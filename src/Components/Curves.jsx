@@ -29,8 +29,8 @@ const Curves = props => {
     for (let i = 0; i < 5; i++) {
       ctx.lineWidth = 1 + i;
       ctx.beginPath();
-      ctx.moveTo(5 + i * 14, 5);
-      ctx.lineTo(5 + i * 14, 140);
+      ctx.moveTo(150 + i * 14, 5);
+      ctx.lineTo(150 + i * 14, 140);
 
       // Three types of end point styles 
 
@@ -59,10 +59,11 @@ const Curves = props => {
 
     // Once we've created a CanvasGradient object we can assign colors to it by using the addColorStop() method.
   }
+
   useEffect(() => {
     const canvas = canvaRef.current;
     const canvaContext = canvas.getContext('2d');
-    // drawQuadCurve(canvaContext);
+    drawQuadCurve(canvaContext);
     lineStyles(canvaContext);
   }, [drawQuadCurve, lineStyles])
 

@@ -1,13 +1,13 @@
-import { useState } from 'react'
 import './App.css'
-import Canva from './Components/Canva'
+import Shapes from './Components/Shapes'
+import Curves from './Components/Curves'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <Canva/>
+      <Shapes/>
+      <Curves/>
     </>
   )
 }
